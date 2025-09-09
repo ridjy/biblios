@@ -14,11 +14,12 @@
             {{ form_row(form.title, {label: 'Titre'}) }}
             {{ form_row(form.editedAt, {label: 'Date d\'edition'}) }}
             {{ form_row(form.plot, {label: 'Synopsis'}) }}
+            {{ form_row(form.cover, {label: 'Couverture'}) }}
             {{ form_row(form.pageNumber, {label: 'Nombre de page'}) }}
             {{ form_row(form.status, {label: 'Statut'}) }}
             {{ form_row(form.editor, {label: 'Editor'}) }}
             {{ form_row(form.author, {label: 'Auteur'}) }}
-
+            {{ form_row(form._token) }}
             <button type="submit" class="btn btn-primary">Envoyer</button>
         {{ form_end(form, { render_rest: false }) }}
     </div>
