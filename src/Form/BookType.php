@@ -25,7 +25,9 @@ class BookType extends AbstractType
     {
         $builder
             ->add('title', TextType::class)
-            ->add('isbn', RadioType::class)
+            ->add('isbn', TextType::class, [
+                'data' => '12345', // valeur par défaut
+            ])
             ->add('cover', TextType::class)
             ->add('editedAt', DateType::class, [
                 'input' => 'datetime_immutable',
