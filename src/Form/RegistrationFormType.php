@@ -31,6 +31,8 @@ class RegistrationFormType extends AbstractType
                 'required' => true,
                 'choices' => [
                     'Utilisateur' => 'ROLE_USER',
+                    'Gestionnaire de livres' => 'ROLE_EDITION_DE_LIVRE',
+                    'Moderateur' => 'ROLE_MODERATEUR',
                     'Administrateur' => 'ROLE_ADMIN',
                 ],
                 'multiple' => true,
