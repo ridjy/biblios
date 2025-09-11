@@ -59,7 +59,7 @@ class Book
     #[ORM\OneToMany(targetEntity: Comment::class, mappedBy: 'book')]
     private Collection $comments;
 
-    #[ORM\ManyToOne(inversedBy: 'books')]
+    #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?User $createdBy = null;
 
